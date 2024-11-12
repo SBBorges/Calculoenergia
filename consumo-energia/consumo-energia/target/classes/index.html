@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Consumo de Energia</title>
+</head>
+<body>
+<h1>Consumo de Energia Anual</h1>
+<form action="/calcular" method="post">
+    <label for="nomeAluno">Nome do Aluno:</label>
+    <input type="text" id="nomeAluno" name="nomeAluno" required><br><br>
+
+    <h3>Insira o consumo para cada mês:</h3>
+    <div>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+        <input type="number" name="consumoMes" step="0.01" required><br>
+    </div>
+
+    <button type="submit">Calcular</button>
+</form>
+
+<p th:if="${error}" th:text="${error}" style="color: red;"></p>
+</body>
+</html>

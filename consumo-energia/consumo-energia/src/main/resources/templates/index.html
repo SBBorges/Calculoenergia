@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculo de Consumo de Energia</title>
+</head>
+<body>
+<h1>Calcule o Consumo de Energia da Lavadora</h1>
+<form action="/calcular" method="post">
+    <label for="nomeAluno">Nome do Aluno:</label>
+    <input type="text" id="nomeAluno" name="nomeAluno" required>
+    <br><br>
+
+    <!-- Campos de entrada para os 12 meses -->
+    <label for="consumoMes">Consumo mensal (em kWh):</label><br>
+    <input type="number" step="0.01" name="consumoMes" required><br>
+    <!-- Repita o campo acima para todos os 12 meses -->
+
+    <br>
+    <button type="submit">Calcular</button>
+</form>
+</body>
+</html>

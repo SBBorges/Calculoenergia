@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado do Consumo</title>
+</head>
+<body>
+<h1>Resultado do Consumo de Energia</h1>
+<p>Nome do Aluno: <span th:text="${nomeAluno}"></span></p>
+<p>Total Gasto no Ano: <span th:text="${totalGasto}"></span> kWh</p>
+<p>Mês com Maior Consumo: <span th:text="${mesMaiorConsumo}"></span></p>
+<p>Mês com Menor Consumo: <span th:text="${mesMenorConsumo}"></span></p>
+
+<a href="/">Calcular Novamente</a>
+</body>
+</html>
